@@ -8,25 +8,22 @@
     <title>BMI Calculator</title>
 </head>
 <body>
-    <h1 id="header">BMI Calculator</h1>
+    <h1>BMI Calculator</h1>
     <div class="calculator-container">
         <form class="form-container">
             <div class="form-group">
-                <label for="weight">Your Weight (lbs): </label>
+                <label for="weight">Weight (kilograms): </label>
                 <input id="weight" class="form-control" name="weight" type="number">
             </div>
             <div class="form-group">
-                <p>Your Height: </p>
-                <label for="feet">Feet </label>
-                <input type="number" name="feet" id="feet">
-                <label for="inches">Inches</label>
-                <input type="number" name="inches" id="inches">
+                <label for="height">Heights (centimeters): </label>
+                <input id="height" type="number" name="height">
             </div>
-            <button type="button" id="calculate" onclick="calculateBMIInImperalSystem()">Calculate</button>
+            <button type="button" id="calculate" onclick="calculateBMIInMetricSystem()">Calculate</button>
             <h3 id="result"></h3>
             <h4 id="info"></h4>
         </form>
-        <i><a href="metricsystem.html">Calculate in Metric Sytem</a></i>
+        <i><a href="index.html">Calculate in Standard System</a></i>
     </div>
 
     <!-- Connect JavaScript file -->
