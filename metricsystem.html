@@ -18,12 +18,18 @@
     <div class="calculator-container">
         <form class="form-container">
             <div class="form-group">
-                <label for="weight">Weight (kg): </label>
-                <input id="weight" class="form-control" name="weight" type="number">
+                <p>Weight:</p>
+                <div style="display: flex; gap: 10px;">
+                    <input id="weight" class="form-control" name="weight" type="number">
+                    <label for="weight">kg</label>
+                </div>
             </div>
             <div class="form-group">
-                <label for="feet">Height (in): </label>
-                <input id="height" class="form-control" name="height" type="number">
+                <p>Height:</p>
+                <div style="display: flex; gap: 10px;">
+                    <input id="height" class="form-control" name="height" type="number" style="margin-bottom: 15px;">
+                    <label for="height">cm</label>
+                </div>
             </div>
             <button type="button" id="calculate" onclick="calculateBMIInMetricSystem()">Calculate</button>
             <h3 id="result"></h3>
