@@ -13,3 +13,10 @@ You can view this BMI Calculator [here]()
 
 ## Screenshots
 
+#### Standard System
+
+![standard system](screenshots/standard-system.png)
+
+#### Metric System
+
+![metric system](screenshots/metric-system.png)
