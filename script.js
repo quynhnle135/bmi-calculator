@@ -1,10 +1,8 @@
-function getData() {
-  const height = parseFloat(document.getElementById("height").value);
-  const weight = parseFloat(document.getElementById("weight").value);
-  return { height, weight };
-}
 function calculateBMIInImperalSystem() {
-  const { height, weight } = getData();
+  const feet = parseInt(document.getElementById("feet").value);
+  const inches = parseInt(document.getElementById("inches").value);
+  const weight = parseFloat(document.getElementById("weight").value);
+  let height = feet * 12 + inches;
   let result = Math.round(703 * (weight / Math.pow(height, 2)) * 100) / 100;
   document.getElementById("result").innerText = `BMI: ${result}`;
 
@@ -23,7 +21,8 @@ function calculateBMIInImperalSystem() {
 }
 
 function calculateBMIInMetricSystem() {
-  const { height, weight } = getData();
+  const height = parseFloat(document.getElementById("height").value);
+  const weight = parseFloat(document.getElementById("weight").value);
   let result = Math.round((weight / Math.pow(height / 100, 2)) * 100) / 100;
   document.getElementById("result").innerText = `BMI: ${result}`;
 

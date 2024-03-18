@@ -18,12 +18,20 @@
     <div class="calculator-container">
         <form class="form-container">
             <div class="form-group">
-                <label for="weight">Weight (lbs): </label>
-                <input id="weight" class="form-control" name="weight" type="number">
+                <p>Weight:</p>
+                <div style="display: flex; gap: 5px;">
+                    <input id="weight" class="form-control" name="weight" type="number">
+                    <label for="weight">lbs</label>
+                </div>
             </div>
             <div class="form-group">
-                <label for="feet">Height (inches): </label>
-                <input id="height" class="form-control" name="height" type="number">
+                <p>Height:</p>
+                <div style="display: flex; gap: 5px; padding: 0 0 15px 0;">
+                    <input id="feet" class="form-control" name="feet" type="number">
+                    <label for="feet">ft</label>
+                    <input id="inches" class="form-control" name="inches" type="number">
+                    <label for="inches">in</label>
+                </div>
             </div>
             <button type="button" id="calculate" onclick="calculateBMIInImperalSystem()">Calculate</button>
             <h3 id="result"></h3>
